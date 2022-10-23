@@ -265,7 +265,7 @@ function showEditBookForm(event, book) {
   inputIsRead.id = 'checkbox-edit';
   inputIsRead.type = 'checkbox';
 
-  const bookItem = findIndexBook(book.id);
+  const bookItem = findBook(book.id);
   if (bookItem.isFinished) {
     inputIsRead.setAttribute('checked', '');
   }
